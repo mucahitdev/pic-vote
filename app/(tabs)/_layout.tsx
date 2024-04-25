@@ -1,30 +1,33 @@
-import { Link, Tabs } from 'expo-router';
+import { Tabs } from 'expo-router';
+import { t } from 'i18next';
 
-import { HeaderButton } from '../../components/HeaderButton';
-import { TabBarIcon } from '../../components/TabBarIcon';
+import { TabBarIcon } from '@/components/TabBarIcon';
 
 export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: 'black',
+        tabBarStyle: {
+          display: 'flex',
+        },
       }}>
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
+          title: t('home'),
           tabBarIcon: ({ color }) => <TabBarIcon name="home" color={color} />,
-          headerRight: () => (
-            <Link href="/modal" asChild>
-              <HeaderButton />
-            </Link>
-          ),
+          // headerRight: () => (
+          //   <Link href="/modal" asChild>
+          //     <HeaderButton />
+          //   </Link>
+          // ),
         }}
       />
       <Tabs.Screen
-        name="two"
+        name="profile"
         options={{
-          title: 'Tab Two',
+          title: t('profile'),
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
         }}
       />

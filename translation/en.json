@@ -1,14 +1,14 @@
 {
+  "home": "Home",
+  "profile": "Profile",
+  "language": "Language",
   "navigation": {
-    "home": "Home",
     "about": "About",
     "contact": "Contact",
     "login": "Login",
     "logout": "Logout",
     "register": "Register",
-    "profile": "Profile",
-    "settings": "Settings",
-    "language": "Language"
+    "settings": "Settings"
   },
   "welcome": "Welcome",
   "explore": "Get Explore"

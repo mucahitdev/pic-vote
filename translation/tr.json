@@ -1,14 +1,14 @@
 {
+  "home": "Anasayfa",
+  "profile": "Profil",
+  "language": "Dil",
   "navigation": {
-    "home": "Anasayfa",
     "about": "Hakkımızda",
     "contact": "İletişim",
     "login": "Giriş Yap",
     "logout": "Çıkış Yap",
     "register": "Kayıt Ol",
-    "profile": "Profil",
-    "settings": "Ayarlar",
-    "language": "Dil"
+    "settings": "Ayarlar"
   },
   "welcome": "Hoşgeldin",
   "explore": "Keşfet"
