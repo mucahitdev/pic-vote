@@ -1,4 +1,4 @@
-import '../translation';
+import '../src/translation';
 
 import { useFonts } from 'expo-font';
 import { SplashScreen, Stack } from 'expo-router';

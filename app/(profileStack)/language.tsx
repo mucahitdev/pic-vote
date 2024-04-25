@@ -1,6 +1,6 @@
 import { StyleSheet, View, Text } from 'react-native';
 
-import LangList from '@/src/com/langList';
+import LangList from '@/com/langList';
 
 export default function Home() {
   return (

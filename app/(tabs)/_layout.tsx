@@ -1,7 +1,6 @@
+import { TabBarIcon } from '@/components/TabBarIcon';
 import { Tabs } from 'expo-router';
 import { t } from 'i18next';
-
-import { TabBarIcon } from '@/components/TabBarIcon';
 
 export default function TabLayout() {
   return (

@@ -1,6 +1,7 @@
-import { init18n } from 'core/i18n/init';
-import en from 'translation/en.json';
-import tr from 'translation/tr.json';
+import en from './en.json';
+import tr from './tr.json';
+
+import { init18n } from '@/core/i18n/init';
 
 export const resources = {
   tr: {

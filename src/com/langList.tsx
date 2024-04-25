@@ -1,6 +1,6 @@
-import { router, useNavigation } from 'expo-router';
-import { FC, useLayoutEffect, useState } from 'react';
 import { Feather } from '@expo/vector-icons';
+import { router } from 'expo-router';
+import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 

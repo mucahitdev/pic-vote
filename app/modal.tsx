@@ -1,8 +1,7 @@
-import { InternalizationExample } from 'components/InternalizationExample';
+import { InternalizationExample } from '@/components/InternalizationExample';
+import { ScreenContent } from '@/components/ScreenContent';
 import { StatusBar } from 'expo-status-bar';
 import { Platform } from 'react-native';
-
-import { ScreenContent } from '@/components/ScreenContent';
 
 export default function Modal() {
   return (
