@@ -1,8 +1,15 @@
 {
-  "button": {
-    "french": "Switch language to French",
-    "english": "Switch language to English"
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "login": "Login",
+    "logout": "Logout",
+    "register": "Register",
+    "profile": "Profile",
+    "settings": "Settings",
+    "language": "Language"
   },
-  "getStarted": "Open up the code for this screen:",
-  "changeCode": "Change any of the text, save the file, and your app will automatically update."
+  "welcome": "Welcome",
+  "explore": "Get Explore"
 }

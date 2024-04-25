@@ -1,5 +1,6 @@
 import { LinearGradient } from 'expo-linear-gradient';
 import { Link } from 'expo-router';
+import { t } from 'i18next';
 import React from 'react';
 import { View, Text, ImageBackground, StyleSheet } from 'react-native';
 import Animated, { FadeInDown } from 'react-native-reanimated';
@@ -20,7 +21,7 @@ export default function WallcomeScreen() {
           <AnimatedText
             entering={FadeInDown.delay(500).springify()}
             style={{ fontSize: 16, fontFamily: 'InterBold' }}>
-            Welcomee
+            {t('welcome')}
           </AnimatedText>
           <AnimatedText
             entering={FadeInDown.delay(600).springify()}
@@ -30,7 +31,7 @@ export default function WallcomeScreen() {
 
           <Link href="/(tabs)" asChild replace>
             <AnimatedButton entering={FadeInDown.delay(800).springify()}>
-              Get Started
+              {t('explore')}
             </AnimatedButton>
           </Link>
         </View>
