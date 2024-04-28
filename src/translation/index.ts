@@ -12,7 +12,7 @@ export const resources = {
   },
 };
 
-export const fallbackLng = 'tr';
+export const fallbackLng = 'en';
 
 export type LanguageCode = keyof typeof resources;
 

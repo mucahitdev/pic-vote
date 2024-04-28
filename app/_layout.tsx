@@ -3,9 +3,12 @@ import '../src/translation';
 import { useFonts } from 'expo-font';
 import { SplashScreen, Stack } from 'expo-router';
 import React, { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { TamaguiProvider } from 'tamagui';
 
 import config from '../tamagui.config';
+
+import { useUserStore } from '@/store/userSlice';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -19,14 +22,17 @@ export default function RootLayout() {
     Inter: require('@tamagui/font-inter/otf/Inter-Medium.otf'),
     InterBold: require('@tamagui/font-inter/otf/Inter-Bold.otf'),
   });
+  const { i18n } = useTranslation();
+  const lang = useUserStore((state) => state.language);
 
   useEffect(() => {
-    if (loaded) {
-      SplashScreen.hideAsync();
+    if (lang) {
+      i18n.changeLanguage(lang);
+      if (loaded) SplashScreen.hideAsync();
     }
-  }, [loaded]);
+  }, [loaded, lang]);
 
-  if (!loaded) return null;
+  if (!loaded || !lang) return null;
 
   return (
     <TamaguiProvider config={config}>

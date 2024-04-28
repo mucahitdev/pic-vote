@@ -4,6 +4,7 @@ import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 
+import { useUserStore } from '@/store/userSlice';
 import { resources } from '@/translation';
 
 const Separator = () => <View style={{ height: 1, backgroundColor: '#535C91' }} />;
@@ -25,12 +26,15 @@ const ListItem: FC<{
 
 export default function LangList() {
   const { i18n } = useTranslation();
+  const setLanguage = useUserStore((state) => state.setLanguage);
+
   const lang = Object.keys(resources);
   const active = i18n.language;
 
   const toggleLanguage = (locale: string) => {
     if (active === locale) return;
     i18n.changeLanguage(locale);
+    setLanguage(locale);
     router.replace('/(profileStack)/language');
   };
 
